@@ -1,43 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:background="@color/teal_200"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/top"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/teal_200"
-        app:layout_constraintHeight_percent="0.2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintWidth_percent="1" />
+    <ImageView
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/middle"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/teal_700"
-        app:layout_constraintHeight_percent="0.25"
-        app:layout_constraintWidth_percent="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top" />
+    <TextView
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="40sp" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/purple_500"
-        app:layout_constraintHeight_percent="0.55"
-        app:layout_constraintWidth_percent="1"
-        app:layout_constraintTop_toBottomOf="@+id/middle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:layout_marginTop="400dp"
+        android:text="Button"
+        android:layout_width="200dp"
+        android:layout_height="100dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_gravity="center"
+        android:background="@color/purple_200"
+        android:layout_width="50dp"
+        android:layout_height="100dp"/>
+
+</FrameLayout>
